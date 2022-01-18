@@ -1,0 +1,59 @@
+<div class="container-fluid py-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="card my-4">
+                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                    <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
+                        <h6 class="text-white text-capitalize ps-3">New Category</h6>
+                    </div>
+                </div>
+                <form action="/admin/add_category" method="POST">
+                    <div class="card-body px-0 pb-2">
+                        <p></p>
+                        <div class="table-responsive p-0" style="margin:0 20px">
+                            <div class="form-floating">
+                                <input type="text" name="name" class="form-control"
+                                    style="border: 1px solid rgba(0, 0, 0, 0.185); padding-left:5px">
+                                <label>Name</label>
+                            </div>
+                            <p></p>
+                            <div class="form-floating">
+                                <input type="text" name="slug" class="form-control"
+                                    style="border: 1px solid rgba(0, 0, 0, 0.185); padding-left:5px">
+                                <label>Slug</label>
+                            </div>
+                            <p></p>
+                            <div class="form-floating">
+                                <input name="description" type="text"  class="form-control"
+                                    style="border: 1px solid rgba(0, 0, 0, 0.185); padding-left:5px">
+                                <label>Description</label>
+                            </div>
+                            <p></p>
+                            <div class="form-floating">
+                                <input type="text" name="parent" class="form-control"
+                                    style="border: 1px solid rgba(0, 0, 0, 0.185); padding-left:5px">
+                                <label>Parent</label>
+                            </div>
+                            <p></p>
+                            <div class="form-floating">
+                                <input type="text" name="status" class="form-control"
+                                    style="border: 1px solid rgba(0, 0, 0, 0.185); padding-left:5px">
+                                <label>Status</label>
+                            </div>
+                            <p></p>
+                            
+                    
+                          
+                            <div class="form-floating">
+                                <button type="submit" class="btn btn-success"> Thêm thể loại  mới </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>

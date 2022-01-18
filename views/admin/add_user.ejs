@@ -1,0 +1,95 @@
+<div class="container-fluid py-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="card my-4">
+                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                    <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
+                        <h6 class="text-white text-capitalize ps-3">New project</h6>
+                    </div>
+                </div>
+                <form action="/admin/adduser" method="POST" enctype="multipart/form-data">
+                    <div class="card-body px-0 pb-2">
+                        <p></p>
+                        <div class="table-responsive p-0" style="margin:0 20px">
+                            <div class="form-floating">
+                                <input type="text" name="name" class="form-control"
+                                    style="border: 1px solid rgba(0, 0, 0, 0.185); padding-left:5px">
+                                <label>Name</label>
+                            </div>
+                            <p></p>
+                            <div class="form-floating">
+                                <input type="text" name="slug" class="form-control"
+                                    style="border: 1px solid rgba(0, 0, 0, 0.185); padding-left:5px">
+                                <label>Slug</label>
+                            </div>
+                            <p></p>
+                            <div class="form-floating">
+                                <input name="sampleFile" accept="image/*" type="file"  class="form-control"
+                                    style="border: 1px solid rgba(0, 0, 0, 0.185); padding-left:5px">
+                                <label>Image</label>
+                            </div>
+                            <p></p>
+                            <div class="form-floating">
+                                <input type="text" name="author" class="form-control"
+                                    style="border: 1px solid rgba(0, 0, 0, 0.185); padding-left:5px">
+                                <label>Author</label>
+                            </div>
+                            <p></p>
+                            <div class="form-floating">
+                                <input type="text" name="price" class="form-control"
+                                    style="border: 1px solid rgba(0, 0, 0, 0.185); padding-left:5px">
+                                <label>Price</label>
+                            </div>
+                            <p></p>
+                            <div class="form-floating">
+                                <input type="text" name="cost" class="form-control"
+                                    style="border: 1px solid rgba(0, 0, 0, 0.185); padding-left:5px">
+                                <label>Cost</label>
+                            </div>
+                            <p></p>
+                            <div class="form-floating">
+                                <input type="text" name="discount" class="form-control money"
+                       
+                                    style="border: 1px solid rgba(0, 0, 0, 0.185); padding-left:5px">
+                                <label>Discount</label>
+                            </div>
+                            <p></p>
+                            <div class="form-floating">
+                                <input type="text" name="material" class="form-control"
+                                    style="border: 1px solid rgba(0, 0, 0, 0.185); padding-left:5px">
+                                <label>Material</label>
+                            </div>
+                            <p></p>
+                            <div class="form-floating">
+                                <input type="text" name="status" class="form-control"
+                                    style="border: 1px solid rgba(0, 0, 0, 0.185); padding-left:5px">
+                                <label>Status</label>
+                            </div>
+                            <p></p>
+                            <div class="form-floating">
+                            
+                              
+                                <select  style="border: 1px solid rgba(0, 0, 0, 0.185);" class="form-control" name="category" id="">
+                                    <% 
+                                        category.map(categories=>{%>
+                                            <option style="border: 1px solid rgba(0, 0, 0, 0.185); margin-left: 10px ;" class="form-control" value="<%= categories.id %>"> <%= categories.name %> </option>
+                                        <%})
+                                    %>
+                                  
+
+                                </select>
+                            </div>
+                            <p></p>
+                            <div class="form-floating">
+                                <button type="submit" class="btn btn-success"> Thêm sách mới </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
